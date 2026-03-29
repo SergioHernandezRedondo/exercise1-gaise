@@ -1,0 +1,28 @@
+{
+  "name": "exercise1-gaise",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SergioHernandezRedondo/exercise1-gaise.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/SergioHernandezRedondo/exercise1-gaise/issues"
+  },
+  "homepage": "https://github.com/SergioHernandezRedondo/exercise1-gaise#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "@types/node": "^25.5.0"
+  },
+  "dependencies": {
+    "minimist": "^1.2.8",
+    "playwright": "^1.58.2",
+    "yargs": "^18.0.0"
+  }
+}

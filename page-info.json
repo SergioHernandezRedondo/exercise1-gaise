@@ -1,0 +1,102 @@
+{
+  "url": "https://inmobiliariaiparralde.com/inmuebles/listado_de_inmuebles",
+  "totalColMd4": 16,
+  "elements": [
+    {
+      "index": 0,
+      "href": "https://inmobiliariaiparralde.com/inmuebles/inmueble_detalles/809",
+      "hasInmuebleDetalles": true,
+      "text": "                                                                                                                                                      "
+    },
+    {
+      "index": 1,
+      "href": "https://inmobiliariaiparralde.com/inmuebles/inmueble_detalles/785",
+      "hasInmuebleDetalles": true,
+      "text": "                                                                                                                                                      "
+    },
+    {
+      "index": 2,
+      "href": "https://inmobiliariaiparralde.com/inmuebles/inmueble_detalles/799",
+      "hasInmuebleDetalles": true,
+      "text": "                                                                                                                                                      "
+    },
+    {
+      "index": 3,
+      "href": "https://inmobiliariaiparralde.com/inmuebles/inmueble_detalles/806",
+      "hasInmuebleDetalles": true,
+      "text": "                                                                                                                                                      "
+    },
+    {
+      "index": 4,
+      "href": "https://inmobiliariaiparralde.com/inmuebles/inmueble_detalles/804",
+      "hasInmuebleDetalles": true,
+      "text": "                                                                                                                                                      "
+    },
+    {
+      "index": 5,
+      "href": "https://inmobiliariaiparralde.com/inmuebles/inmueble_detalles/802",
+      "hasInmuebleDetalles": true,
+      "text": "                                                                                                                                                      "
+    },
+    {
+      "index": 6,
+      "href": "https://inmobiliariaiparralde.com/inmuebles/inmueble_detalles/800",
+      "hasInmuebleDetalles": true,
+      "text": "                                                                                                                                                      "
+    },
+    {
+      "index": 7,
+      "href": "https://inmobiliariaiparralde.com/inmuebles/inmueble_detalles/798",
+      "hasInmuebleDetalles": true,
+      "text": "                                                                                                                                                      "
+    },
+    {
+      "index": 8,
+      "href": "https://inmobiliariaiparralde.com/inmuebles/inmueble_detalles/795",
+      "hasInmuebleDetalles": true,
+      "text": "                                                                                                                                                      "
+    },
+    {
+      "index": 9,
+      "href": "https://inmobiliariaiparralde.com/inmuebles/inmueble_detalles/792",
+      "hasInmuebleDetalles": true,
+      "text": "                                                                                                                                                      "
+    },
+    {
+      "index": 10,
+      "href": "javascript:copiar_clipboard();",
+      "hasInmuebleDetalles": false,
+      "text": "             Copiar         "
+    },
+    {
+      "index": 11,
+      "href": "javascript:copiar_clipboard();",
+      "hasInmuebleDetalles": false,
+      "text": "             Copiar         "
+    },
+    {
+      "index": 12,
+      "href": "https://inmobiliariaiparralde.com/inmuebles/.search-propertie-filters",
+      "hasInmuebleDetalles": false,
+      "text": "                                                Búsqueda Avanzada                                                                                     "
+    },
+    {
+      "index": 13,
+      "href": "",
+      "hasInmuebleDetalles": "",
+      "text": "                                              Agencia Inmobiliaria               a ambos lados del Bidasoa                           "
+    },
+    {
+      "index": 14,
+      "href": "tel:+34943905537",
+      "hasInmuebleDetalles": false,
+      "text": "                                             Teléfono               (+34) 943 90 55 37                            "
+    },
+    {
+      "index": 15,
+      "href": "https://inmobiliariaiparralde.com/contacto",
+      "hasInmuebleDetalles": false,
+      "text": "                                            Contacta con Nosotros             Envienos un Mensaje                                        "
+    }
+  ]
+}

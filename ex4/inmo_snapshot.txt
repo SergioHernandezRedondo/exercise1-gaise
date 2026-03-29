@@ -1,0 +1,682 @@
+- generic
+  - banner
+    - link "Iparralde Inmobiliaria - Palacio de Arbelaiz" [ref=e9]
+      - image "Iparralde Inmobiliaria - Palacio de Arbelaiz"
+    - generic
+      - generic
+        - StaticText ""
+        - list
+          - listitem [level=1]
+            - heading "Teléfono" [level=4, ref=e107]
+          - listitem [level=1]
+            - paragraph
+              - link "(+34) 943 90 55 37" [ref=e145]
+      - generic
+        - StaticText " "
+        - list
+          - listitem [level=1]
+            - image
+    - navigation
+      - generic
+        - list
+          - listitem [level=1]
+            - link "" [ref=e146]
+              - StaticText ""
+          - listitem [level=1]
+            - link "" [ref=e147]
+              - StaticText ""
+        - list
+          - listitem [level=1]
+            - link "INICIO" [ref=e149]
+          - listitem [level=1]
+            - link "INMUEBLES" [ref=e150]
+              - StaticText "INMUEBLES"
+              - StaticText ""
+          - listitem [level=1]
+            - link "VENDER" [ref=e151]
+              - StaticText "VENDER"
+              - StaticText ""
+          - listitem [level=1]
+            - link "QUIENES SOMOS" [ref=e152]
+          - listitem [level=1]
+            - link "SERVICIOS" [ref=e153]
+              - StaticText "SERVICIOS"
+              - StaticText ""
+          - listitem [level=1]
+            - link "NOTICIAS" [ref=e154]
+          - listitem [level=1]
+            - link "CONTACTO" [ref=e155]
+              - StaticText "CONTACTO"
+              - StaticText ""
+          - listitem [level=1]
+            - link "FAVORITOS" [ref=e156]
+  - generic
+    - image "Bienes Inmuebles a ambos lados del Bidasoa"
+    - generic
+      - list
+        - listitem [level=1]
+          - link "Comprar" [ref=e39]
+        - listitem [level=1]
+          - link "Alquilar" [ref=e40]
+        - listitem [level=1]
+          - link "Prestige" [ref=e41]
+      - textbox "Referencia" [ref=e148]
+      - LayoutTable
+        - StaticText ""
+        - generic
+          - listbox "Tipo de Inmueble" [ref=e158]
+            - option "Piso" [selected, ref=e166]
+            - option "Casa" [ref=e167]
+            - option "Local" [ref=e168]
+            - option "Oficina" [ref=e169]
+            - option "Suelo" [ref=e170]
+            - option "Trastero" [ref=e171]
+            - option "Ático" [ref=e172]
+            - option "Parking" [ref=e173]
+          - button "Piso" [ref=e159]
+            - StaticText "Piso"
+      - LayoutTable
+        - StaticText ""
+        - generic
+          - listbox "¿Donde?" [ref=e160]
+            - option "Irun" [ref=e174]
+            - option "Arcangues" [ref=e175]
+            - option "Hendaye" [selected, ref=e176]
+            - option "Bagnères-de-Bigorre" [ref=e177]
+            - option "Arantza" [ref=e178]
+          - button "Hendaye" [ref=e161]
+            - StaticText "Hendaye"
+      - LayoutTable
+        - StaticText ""
+        - generic
+          - combobox "Habitaciones" [expanded=false, ref=e162]
+            - MenuListPopup
+              - option [selected, ref=e179]
+              - option "Habs." [ref=e180]
+              - option "1" [ref=e181]
+              - option "2" [ref=e182]
+              - option "3" [ref=e183]
+              - option "4" [ref=e184]
+              - option "5 o +" [ref=e185]
+          - button "Habitaciones" [ref=e163]
+            - StaticText "Habitaciones"
+      - LayoutTable
+        - StaticText ""
+        - generic
+          - combobox "Presupuesto" [expanded=false, ref=e164]
+            - MenuListPopup
+              - option [selected, ref=e186]
+              - option "Presupuesto" [ref=e187]
+              - option "50.000 €" [ref=e188]
+              - option "100.000 €" [ref=e189]
+              - option "150.000 €" [ref=e190]
+              - option "200.000 €" [ref=e191]
+              - option "250.000 €" [ref=e192]
+              - option "300.000 €" [ref=e193]
+              - option "350.000 €" [ref=e194]
+              - option "400.000 €" [ref=e195]
+              - option "450.000 €" [ref=e196]
+              - option "500.000 €" [ref=e197]
+              - option "600.000 €" [ref=e198]
+              - option "800.000 €" [ref=e199]
+              - option "1.000.000 €" [ref=e200]
+              - option "2.000.000 €" [ref=e201]
+              - option "2.000.000 € o +" [ref=e202]
+          - button "Presupuesto" [ref=e165]
+            - StaticText "Presupuesto"
+      - button [ref=e157]
+  - generic
+    - heading "INMUEBLES DESTACADOS" [level=2, ref=e3]
+      - StaticText "INMUEBLES DESTACADOS"
+    - paragraph
+      - StaticText "Disponemos de un gran número de "
+      - strong
+        - StaticText "propiedades inmobiliarias"
+      - StaticText " en "
+      - strong
+        - StaticText "Irun, Hendaye, Hondarribia, Donostia"
+      - StaticText " y alrededores."
+  - generic
+    - generic
+      - image "Villa señorial en Hendaya – Zona de standing de Lissardy "
+      - generic
+        - generic
+          - StaticText "216 m"
+          - superscript
+            - StaticText "2"
+        - generic
+          - StaticText ""
+          - StaticText " 5"
+        - generic
+          - StaticText ""
+          - StaticText "2"
+        - generic
+          - StaticText ""
+          - StaticText " 1"
+      - StaticText "Venta"
+      - link "Ver Detalles" [ref=e108]
+        - StaticText "Ver Detalles"
+        - StaticText ""
+    - LayoutTable
+      - heading "Villa señorial en Hendaya – Zona de standing de Lissardy" [level=3, ref=e42]
+        - link "Villa señorial en Hendaya – Zona de standing de Lissardy" [ref=e73]
+      - StaticText "Hendaye, FR"
+      - LineBreak "\n"
+      - StaticText "REF: 2333/MAE"
+      - paragraph
+        - StaticText "Villa señorial en Hendaya – Zona de standing de Lissardy Situada en Lissar..."
+      - paragraph
+        - StaticText "748.900,00 €"
+      - list
+        - listitem [level=1, ref=e74] clickable [cursor:pointer]
+          - link "" [ref=e109]
+            - StaticText ""
+        - listitem [level=1]
+          - link "" [ref=e110]
+            - StaticText ""
+        - listitem [level=1]
+          - link "" [ref=e111]
+            - StaticText ""
+    - generic
+      - image "Elegante propiedad completamente reformada – Orientación sur – Vistas a la montaña – Piscina climatizada"
+      - generic
+        - generic
+          - StaticText "188 m"
+          - superscript
+            - StaticText "2"
+        - generic
+          - StaticText ""
+          - StaticText " 5"
+        - generic
+          - StaticText ""
+          - StaticText "4"
+        - generic
+          - StaticText ""
+          - StaticText " 1"
+      - StaticText "Venta"
+      - link "Ver Detalles" [ref=e112]
+        - StaticText "Ver Detalles"
+        - StaticText ""
+    - LayoutTable
+      - heading "Elegante propiedad completamente reformada – Orientación sur – V..." [level=3, ref=e43]
+        - link "Elegante propiedad completamente reformada – Orientación sur – V..." [ref=e75]
+      - StaticText "Hendaye, FR"
+      - LineBreak "\n"
+      - StaticText "REF: 2357MAS"
+      - paragraph
+        - StaticText "Elegante propiedad completamente reformada – Orientación sur – Vistas a la ..."
+      - paragraph
+        - StaticText "898.000,00 €"
+      - list
+        - listitem [level=1, ref=e76] clickable [cursor:pointer]
+          - link "" [ref=e113]
+            - StaticText ""
+        - listitem [level=1]
+          - link "" [ref=e114]
+            - StaticText ""
+        - listitem [level=1]
+          - link "" [ref=e115]
+            - StaticText ""
+    - generic
+      - image "Hendaia Playa – Urbanización Lissardy – Vivienda de 2 habs con 2 Terrazas."
+      - generic
+        - generic
+          - StaticText "40 m"
+          - superscript
+            - StaticText "2"
+        - generic
+          - StaticText ""
+          - StaticText " 2"
+        - generic
+          - StaticText ""
+          - StaticText "1"
+      - StaticText "Venta"
+      - link "Ver Detalles" [ref=e116]
+        - StaticText "Ver Detalles"
+        - StaticText ""
+    - LayoutTable
+      - heading "Hendaia Playa – Urbanización Lissardy – Vivienda de 2 habs con 2..." [level=3, ref=e44]
+        - link "Hendaia Playa – Urbanización Lissardy – Vivienda de 2 habs con 2..." [ref=e77]
+      - StaticText "Hendaye, FR"
+      - LineBreak "\n"
+      - StaticText "REF: 2359APE"
+      - paragraph
+        - StaticText "Hendaia Playa – Urbanización Lissardy – Vivienda de 2 habs con 2 Terrazas. ..."
+      - paragraph
+        - StaticText "249.500,00 €"
+      - list
+        - listitem [level=1, ref=e78] clickable [cursor:pointer]
+          - link "" [ref=e117]
+            - StaticText ""
+        - listitem [level=1]
+          - link "" [ref=e118]
+            - StaticText ""
+        - listitem [level=1]
+          - link "" [ref=e119]
+            - StaticText ""
+    - generic
+      - image "Hendaya (64) – Magnífico piso de 2 habs, totalmente reformado, con dos balcones y trastero"
+      - generic
+        - generic
+          - StaticText "70 m"
+          - superscript
+            - StaticText "2"
+        - generic
+          - StaticText ""
+          - StaticText " 2"
+        - generic
+          - StaticText ""
+          - StaticText "1"
+      - StaticText "Venta"
+      - link "Ver Detalles" [ref=e120]
+        - StaticText "Ver Detalles"
+        - StaticText ""
+    - LayoutTable
+      - heading "Hendaya (64) – Magnífico piso de 2 habs, totalmente reformado, con..." [level=3, ref=e45]
+        - link "Hendaya (64) – Magnífico piso de 2 habs, totalmente reformado, con..." [ref=e79]
+      - StaticText "Hendaye, FR"
+      - LineBreak "\n"
+      - StaticText "REF: 2338/APE"
+      - paragraph
+        - StaticText "Hendaya (64) – Magnífico piso de 2 habs, totalmente reformado, con dos balcon..."
+      - paragraph
+        - StaticText "223.000,00 €"
+      - list
+        - listitem [level=1, ref=e80] clickable [cursor:pointer]
+          - link "" [ref=e121]
+            - StaticText ""
+        - listitem [level=1]
+          - link "" [ref=e122]
+            - StaticText ""
+        - listitem [level=1]
+          - link "" [ref=e123]
+            - StaticText ""
+    - generic
+      - image "¿Te gustaría disfrutar de tu propio Jardín Privado? ¡Descubre tu nuevo hogar en Hendaia - Playa! Este espectacular piso de 3 habitaciones y 2 baños es la opción perfecta para quienes buscan comodidad y calidad de vida"
+      - generic
+        - generic
+          - StaticText "81 m"
+          - superscript
+            - StaticText "2"
+        - generic
+          - StaticText ""
+          - StaticText " 3"
+        - generic
+          - StaticText ""
+          - StaticText " 1"
+        - generic
+          - StaticText ""
+          - StaticText "2"
+        - generic
+          - StaticText ""
+          - StaticText " 1"
+      - StaticText "Venta"
+      - link "Ver Detalles" [ref=e124]
+        - StaticText "Ver Detalles"
+        - StaticText ""
+    - LayoutTable
+      - heading "¿Te gustaría disfrutar de tu propio Jardín Privado? ¡Descubre tu ..." [level=3, ref=e46]
+        - link "¿Te gustaría disfrutar de tu propio Jardín Privado? ¡Descubre tu ..." [ref=e81]
+      - StaticText "Hendaye, FR"
+      - LineBreak "\n"
+      - StaticText "REF: F001"
+      - paragraph
+        - StaticText "¿Te gustaría disfrutar de tu propio Jardín Privado? ¡Descubre tu nuevo hogar..."
+      - paragraph
+        - StaticText "451.000,00 €"
+      - list
+        - listitem [level=1, ref=e82] clickable [cursor:pointer]
+          - link "" [ref=e125]
+            - StaticText ""
+        - listitem [level=1]
+          - link "" [ref=e126]
+            - StaticText ""
+        - listitem [level=1]
+          - link "" [ref=e127]
+            - StaticText ""
+    - generic
+      - image "Arantza: Una vivienda especial, lista para disfrutarla desde el primer día."
+      - generic
+        - generic
+          - StaticText "93 m"
+          - superscript
+            - StaticText "2"
+        - generic
+          - StaticText ""
+          - StaticText " 2"
+        - generic
+          - StaticText ""
+          - StaticText " 1"
+        - generic
+          - StaticText ""
+          - StaticText "2"
+      - StaticText "Reservado"
+      - link "Ver Detalles" [ref=e128]
+        - StaticText "Ver Detalles"
+        - StaticText ""
+    - LayoutTable
+      - heading "Arantza: Una vivienda especial, lista para disfrutarla desde el prime..." [level=3, ref=e47]
+        - link "Arantza: Una vivienda especial, lista para disfrutarla desde el prime..." [ref=e83]
+      - StaticText "Arantza, ES"
+      - LineBreak "\n"
+      - StaticText "REF: P2594E"
+      - paragraph
+        - StaticText "¿Estás buscando una vivienda en un entorno idílico, que lo tenga todo para vi..."
+      - paragraph
+        - StaticText "Precio consultar"
+      - list
+        - listitem [level=1, ref=e84] clickable [cursor:pointer]
+          - link "" [ref=e129]
+            - StaticText ""
+        - listitem [level=1]
+          - link "" [ref=e130]
+            - StaticText ""
+        - listitem [level=1]
+          - link "" [ref=e131]
+            - StaticText ""
+  - list
+    - StaticText "  "
+    - listitem [level=1]
+      - link "1" [ref=e10]
+    - listitem [level=1]
+      - link "2" [ref=e11]
+    - listitem [level=1]
+      - link "3" [ref=e12]
+    - listitem [level=1]
+      - link "4" [ref=e13]
+    - listitem [level=1]
+      - link "5" [ref=e14]
+    - listitem [level=1]
+      - link "6" [ref=e15]
+    - StaticText "  "
+  - generic
+    - heading "¿QUIERES VENDER TU PROPIEDAD?" [level=2, ref=e4]
+    - paragraph
+      - StaticText "Te lo ponemos fácil. En 24 horas te pondremos en contacto con un agente inmobiliario que determinará el precio de mercado de tu inmueble."
+  - heading "NUESTRAS TÉCNICAS DE VENTA" [level=4, ref=e16]
+  - paragraph
+    - StaticText "Confiándonos tu propiedad inmueble, tu designas a un profesional inmobiliario eficaz y de confianza."
+  - link "Leer Más " [ref=e17]
+    - button "Leer Más " [ref=e48]
+      - StaticText "Leer Más "
+  - heading "¿QUÉ NECESITAMOS PARA VENDER?" [level=4, ref=e18]
+  - paragraph
+    - StaticText "Encuentra la información útil para poder vender tu bien inmueble con la ayuda de nuesta agencia inmobiliaria."
+  - link "Leer Más " [ref=e19]
+    - button "Leer Más " [ref=e49]
+      - StaticText "Leer Más "
+  - heading "SOMOS TUS MEJORES SOCIOS" [level=4, ref=e20]
+  - paragraph
+    - StaticText "Nuestro servicio completo personal - desde la consulta inicial hasta la exitosa celebración del contrato."
+  - link "Leer Más " [ref=e21]
+    - button "Leer Más " [ref=e50]
+      - StaticText "Leer Más "
+  - heading "PIDE UNA ESTIMACIÓN PARA TU INMUEBLE" [level=4, ref=e22]
+  - paragraph
+    - StaticText "Pónte en contacto con nosotros para una estimación gratuita, confidencial y sin compromiso."
+  - link "Pedir una estimación " [ref=e23]
+    - button "Pedir una estimación " [ref=e51]
+      - StaticText "Pedir una estimación "
+  - generic
+    - heading "PIDE UNA ESTIMACIÓN PARA TU INMUEBLE" [level=2, ref=e24]
+    - paragraph
+      - StaticText "Completa la información de tu inmueble y tu disponibilidad y nos pondremos en contacto contigo. Benefíciate de nuestra estimación Gratuita si vas a poner a la venta tu propiedad."
+    - generic
+      - generic
+        - generic [ref=e132] clickable [cursor:pointer]
+          - generic
+            - StaticText "Tipo de Inmueble"
+            - image
+      - textbox "Ciudad" [ref=e133]
+      - spinbutton "Número de habitaciones" [ref=e134]
+      - spinbutton "Metros cuadrados" [ref=e135]
+      - generic
+        - generic [ref=e136] clickable [cursor:pointer]
+          - generic
+            - StaticText "Estado del inmueble"
+            - image
+      - spinbutton "Planta" [ref=e137]
+      - generic
+        - generic [ref=e138] clickable [cursor:pointer]
+          - generic
+            - StaticText "Orientacion"
+            - image
+      - generic
+        - paragraph
+          - StaticText "Selecciona las opciones que encajan con las características de tu inmbueble"
+        - generic [ref=e85] clickable [cursor:pointer]
+          - checkbox "Ascensor" [checked=false, ref=e139]
+          - LabelText
+            - StaticText "Ascensor"
+        - generic [ref=e86] clickable [cursor:pointer]
+          - checkbox "Balcón" [checked=false, ref=e140]
+          - LabelText
+            - StaticText "Balcón"
+        - generic [ref=e87] clickable [cursor:pointer]
+          - checkbox "Terraza" [checked=false, ref=e141]
+          - LabelText
+            - StaticText "Terraza"
+        - generic [ref=e88] clickable [cursor:pointer]
+          - checkbox "Jardín" [checked=false, ref=e142]
+          - LabelText
+            - StaticText "Jardín"
+        - generic [ref=e89] clickable [cursor:pointer]
+          - checkbox "Piscina" [checked=false, ref=e143]
+          - LabelText
+            - StaticText "Piscina"
+        - generic [ref=e90] clickable [cursor:pointer]
+          - checkbox "Garage" [checked=false, ref=e144]
+          - LabelText
+            - StaticText "Garage"
+      - button "Enviar" [ref=e91]
+  - generic
+    - heading "Inmobiliaria Residencial" [level=3, ref=e25]
+    - paragraph
+      - StaticText "Agencia inmobiliaria en Irun y Hendaya especializada en el alquiler y venta de inmuebles."
+  - generic
+    - heading "Inmobiliaria Industrial" [level=3, ref=e26]
+    - paragraph
+      - StaticText "Vendemos y alquilamos locales comerciales, garajes y oficinas bien situados tanto en Francia como en España."
+  - generic
+    - heading "Nuestros Agentes Inmobiliarios" [level=3, ref=e27]
+    - paragraph
+      - StaticText "Cuando elijes un agente de nuestra agencia inmobiliaria puedes tener la seguridad de que un negociador efectivo representará tus intereses."
+  - generic
+    - heading "¿ Que hacemos por ti ?" [level=4, ref=e28]
+    - paragraph
+      - StaticText "Marketing online y directo, reportaje de fotos y videos, asi como trucos para vender tu casa."
+    - link "Leer Más" [ref=e29]
+      - StaticText "Leer Más"
+      - StaticText ""
+  - generic
+    - heading "¿ Que nos diferencia ?" [level=4, ref=e30]
+    - paragraph
+      - StaticText "Analizamos, revisamos y estudiamos el precio de tu vivienda. Analisis exhaustivo de tu comprador."
+    - link "Leer Más" [ref=e31]
+      - StaticText "Leer Más"
+      - StaticText ""
+  - generic
+    - heading "¿ Que queremos de ti ?" [level=4, ref=e32]
+    - paragraph
+      - StaticText "Nuestro objectivo es vender tu casa. Queremos tu confianza, seguridad, tranquilidad y satisfacción."
+    - link "Leer Más" [ref=e33]
+      - StaticText "Leer Más"
+      - StaticText ""
+  - generic
+    - heading "¿ Que necesitamos ?" [level=4, ref=e34]
+    - paragraph
+      - StaticText "Necesitamos la documentación. Autorización de Venta. Llaves de la vivienda."
+    - link "Leer Más" [ref=e35]
+      - StaticText "Leer Más"
+      - StaticText ""
+  - generic
+    - generic
+      - heading "Testimonios de nuestros clientes tu opinión es lo más importante" [level=2, ref=e92]
+        - StaticText "Testimonios de nuestros clientes"
+        - LineBreak "\n"
+        - StaticText "tu opinión es lo más importante"
+      - paragraph
+        - StaticText "¡Un servicio muy profesional! El trato ha sido inmejorable y en todo momento nos han facilitado todos los trámites para la compra de la vivienda. ¡100% Recomendada!"
+      - paragraph
+        - emphasis
+          - StaticText "A. S."
+      - link "Ver Todos Los Inmuebles" [ref=e93]
+        - StaticText "Ver Todos Los Inmuebles"
+        - StaticText ""
+      - heading "Testimonios de nuestros clientes tu opinión es lo más importante" [level=2, ref=e94]
+        - StaticText "Testimonios de nuestros clientes"
+        - LineBreak "\n"
+        - StaticText "tu opinión es lo más importante"
+      - paragraph
+        - StaticText "Muy buena experiencia con esta agencia. Hemos realizado una compra, alquiler y una venta. Muy profesionales y amables."
+      - paragraph
+        - emphasis
+          - StaticText "E. L."
+      - link "Ver Todos Los Inmuebles" [ref=e95]
+        - StaticText "Ver Todos Los Inmuebles"
+        - StaticText ""
+      - heading "Testimonios de nuestros clientes tu opinión es lo más importante" [level=2, ref=e96]
+        - StaticText "Testimonios de nuestros clientes"
+        - LineBreak "\n"
+        - StaticText "tu opinión es lo más importante"
+      - paragraph
+        - StaticText "Merezi izan du Iparralderekin kudeatzea salmenta. Idoia eta Jorge, profesionalak izateaz gain, adeitsuak eta gertukoak izan dira. Mila esker! Sin duda ha sido un acierto gestionar la venta con Iparralde. Idoia y Jorge, además de profesionales, han sido atentos y cercanos. ¡Muchas gracias!"
+      - paragraph
+        - emphasis
+          - StaticText "I. L."
+      - link "Ver Todos Los Inmuebles" [ref=e97]
+        - StaticText "Ver Todos Los Inmuebles"
+        - StaticText ""
+      - heading "Testimonios de nuestros clientes tu opinión es lo más importante" [level=2, ref=e98]
+        - StaticText "Testimonios de nuestros clientes"
+        - LineBreak "\n"
+        - StaticText "tu opinión es lo más importante"
+      - paragraph
+        - StaticText "Muy recomendable, servicio muy profesional en todo momento. Un placer tratar con gente así."
+      - paragraph
+        - emphasis
+          - StaticText "M. I."
+      - link "Ver Todos Los Inmuebles" [ref=e99]
+        - StaticText "Ver Todos Los Inmuebles"
+        - StaticText ""
+    - generic
+      - generic [ref=e100] clickable [cursor:pointer]
+      - generic [ref=e101] clickable [cursor:pointer]
+      - generic [ref=e102] clickable [cursor:pointer]
+      - generic [ref=e103] clickable [cursor:pointer]
+  - generic
+    - StaticText ""
+    - list
+      - listitem [level=1]
+        - heading "Agencia Inmobiliaria" [level=4, ref=e52]
+      - listitem [level=1]
+        - paragraph
+          - StaticText "a ambos lados del Bidasoa"
+  - generic
+    - StaticText ""
+    - list
+      - listitem [level=1]
+        - heading "Teléfono" [level=4, ref=e53]
+      - listitem [level=1]
+        - paragraph
+          - link "(+34) 943 90 55 37" [ref=e104]
+  - generic
+    - StaticText ""
+    - list
+      - listitem [level=1]
+        - heading "Contacta con Nosotros" [level=4, ref=e54]
+          - link "Contacta con Nosotros" [ref=e105]
+      - listitem [level=1]
+        - paragraph
+          - link "Envienos un Mensaje" [ref=e106]
+  - contentinfo
+    - heading "CONTACTA CON NOSOTROS" [level=4, ref=e5]
+    - paragraph
+      - StaticText "Palacio de Arbelaitz, Calle Iglesia 8 20302 Irun, Gipuzkoa, España"
+    - list
+      - listitem [level=1]
+        - link " (+34) 943 90 55 37" [ref=e55]
+          - StaticText ""
+          - StaticText "(+34) 943 90 55 37"
+      - listitem [level=1]
+        - link " Facebook" [ref=e56]
+          - StaticText ""
+          - StaticText " Facebook"
+      - listitem [level=1]
+        - link " Instagram" [ref=e57]
+          - StaticText ""
+          - StaticText " Instagram"
+      - listitem [level=1]
+        - link " www.inmobiliariaiparralde.com" [ref=e58]
+          - StaticText ""
+          - StaticText "www.inmobiliariaiparralde.com"
+      - listitem [level=1]
+        - link " Contacta con Nosotros" [ref=e59]
+          - StaticText ""
+          - StaticText "Contacta con Nosotros"
+      - listitem [level=1]
+        - link " Trabaja con nosotros" [ref=e60]
+          - StaticText ""
+          - StaticText "Trabaja con nosotros"
+    - heading "IPARRALDE INMOBILIARIA" [level=4, ref=e6]
+    - list
+      - listitem [level=1]
+        - StaticText ""
+        - link "Inicio" [ref=e61]
+      - listitem [level=1]
+        - StaticText ""
+        - link "Inmuebles" [ref=e62]
+      - listitem [level=1]
+        - StaticText ""
+        - link "Vender" [ref=e63]
+      - listitem [level=1]
+        - StaticText ""
+        - link "Buscador Avanzado" [ref=e64]
+      - listitem [level=1]
+        - StaticText ""
+        - link "Quienes Somos" [ref=e65]
+      - listitem [level=1]
+        - StaticText ""
+        - link "Servicios" [ref=e66]
+      - listitem [level=1]
+        - StaticText ""
+        - link "Noticias" [ref=e67]
+    - heading "PROPIEDADES INMOBILIARIAS" [level=4, ref=e7]
+    - list
+      - listitem [level=1]
+        - StaticText ""
+        - link "Comprar Pisos" [ref=e68]
+      - listitem [level=1]
+        - StaticText ""
+        - link "Comprar Casas" [ref=e69]
+      - listitem [level=1]
+        - StaticText ""
+        - link "Comprar Locales" [ref=e70]
+      - listitem [level=1]
+        - StaticText ""
+        - link "Alquilar Inmuebles" [ref=e71]
+      - listitem [level=1]
+        - StaticText ""
+        - link "Comprar Garajes" [ref=e72]
+    - heading "HORARIO DE APERTURA OFICINA" [level=4, ref=e8]
+    - list
+      - listitem [level=1]
+        - StaticText "Lun - Vie :"
+        - StaticText "9:30 - 13:00 / 16:00 - 19:00"
+      - listitem [level=1]
+        - StaticText "Sab - Dom :"
+        - StaticText "Cerrado"
+    - paragraph
+      - StaticText "© 2026 "
+      - link "Iparralde Inmobiliaria | Pisos en Irún" [ref=e36]
+      - StaticText ". Todos los derechos reservados | "
+      - link "Avisos Legales" [ref=e37]
+      - StaticText " | "
+      - link "Política de privacidad" [ref=e38]
+  - generic
+    - StaticText "Utilizamos cookies en nuestro website. Puede leer nuestra "
+    - link "politica de cookies " [ref=e1]
+    - StaticText ". "
+    - link "ACEPTAR COOKIES" [ref=e2]
+- StaticText "  "
+- StaticText "  "

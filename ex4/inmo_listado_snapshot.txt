@@ -1,0 +1,846 @@
+- generic
+  - banner
+    - link "Iparralde Inmobiliaria - Palacio de Arbelaiz" [ref=e8]
+      - image "Iparralde Inmobiliaria - Palacio de Arbelaiz"
+    - generic
+      - generic
+        - StaticText ""
+        - list
+          - listitem [level=1]
+            - heading "Teléfono" [level=4, ref=e88]
+          - listitem [level=1]
+            - paragraph
+              - link "(+34) 943 90 55 37" [ref=e139]
+      - generic
+        - StaticText " "
+        - list
+          - listitem [level=1]
+            - image
+    - navigation
+      - generic
+        - list
+          - listitem [level=1]
+            - link "" [ref=e140]
+              - StaticText ""
+          - listitem [level=1]
+            - link "" [ref=e141]
+              - StaticText ""
+        - list
+          - listitem [level=1]
+            - link "INICIO" [ref=e208]
+          - listitem [level=1]
+            - link "INMUEBLES" [ref=e209]
+              - StaticText "INMUEBLES"
+              - StaticText ""
+          - listitem [level=1]
+            - link "VENDER" [ref=e210]
+              - StaticText "VENDER"
+              - StaticText ""
+          - listitem [level=1]
+            - link "QUIENES SOMOS" [ref=e211]
+          - listitem [level=1]
+            - link "SERVICIOS" [ref=e212]
+              - StaticText "SERVICIOS"
+              - StaticText ""
+          - listitem [level=1]
+            - link "NOTICIAS" [ref=e213]
+          - listitem [level=1]
+            - link "CONTACTO" [ref=e214]
+              - StaticText "CONTACTO"
+              - StaticText ""
+          - listitem [level=1]
+            - link "FAVORITOS" [ref=e215]
+  - generic
+    - heading "LISTADO DE INMUEBLES" [level=2, ref=e3]
+      - StaticText "LISTADO DE INMUEBLES"
+    - LineBreak "\n"
+  - generic
+    - generic
+      - generic
+        - generic
+          - link "Villa señorial en Hendaya – Zona de standing de Lissardy " [ref=e50]
+            - image "Villa señorial en Hendaya – Zona de standing de Lissardy "
+          - generic
+            - generic
+              - StaticText "216m"
+              - superscript
+                - StaticText "2"
+            - generic
+              - StaticText ""
+              - StaticText " 5"
+            - generic
+              - StaticText ""
+              - StaticText "2"
+            - generic
+              - StaticText ""
+              - StaticText " 1"
+          - link "Ver Detalles" [ref=e142]
+            - StaticText "Ver Detalles"
+            - StaticText ""
+        - generic
+          - link "Villa señorial en Hendaya – Zona de standing de Lissardy" [ref=e89]
+            - heading "Villa señorial en Hendaya – Zona de standing de Lissardy" [level=3, ref=e143]
+          - LabelText
+            - StaticText "COMPRAR"
+          - generic
+            - paragraph
+              - StaticText "64700 Hendaye, FR"
+            - paragraph
+              - StaticText "REF: 2333/MAE"
+            - paragraph
+              - StaticText "Villa señorial en Hendaya – Zona de standing de Lissardy Situada en Lissardy, en una..."
+            - paragraph
+              - StaticText "748.900,00 €"
+          - generic
+            - link "" [ref=e90]
+              - button "" [ref=e144]
+                - StaticText ""
+            - link "Pedir más información" [ref=e91]
+              - button [ref=e145]
+            - link "Ver Detalles " [ref=e92]
+              - button "Ver Detalles " [ref=e146]
+                - StaticText "Ver Detalles "
+            - button "" [ref=e93]
+              - StaticText ""
+      - generic
+        - generic
+          - link "Elegante propiedad completamente reformada – Orientación sur – V..." [ref=e51]
+            - image "Elegante propiedad completamente reformada – Orientación sur – V..."
+          - generic
+            - generic
+              - StaticText "188m"
+              - superscript
+                - StaticText "2"
+            - generic
+              - StaticText ""
+              - StaticText " 5"
+            - generic
+              - StaticText ""
+              - StaticText "4"
+            - generic
+              - StaticText ""
+              - StaticText " 1"
+          - link "Ver Detalles" [ref=e147]
+            - StaticText "Ver Detalles"
+            - StaticText ""
+        - generic
+          - link "Elegante propiedad completamente reformada – Orientación sur – V..." [ref=e94]
+            - heading "Elegante propiedad completamente reformada – Orientación sur – V..." [level=3, ref=e148]
+          - LabelText
+            - StaticText "COMPRAR"
+          - generic
+            - paragraph
+              - StaticText "64700 Hendaye, FR"
+            - paragraph
+              - StaticText "REF: 2357MAS"
+            - paragraph
+              - StaticText "Elegante propiedad completamente reformada – Orientación sur – Vistas a la montaña �..."
+            - paragraph
+              - StaticText "898.000,00 €"
+          - generic
+            - link "" [ref=e95]
+              - button "" [ref=e149]
+                - StaticText ""
+            - link "Pedir más información" [ref=e96]
+              - button [ref=e150]
+            - link "Ver Detalles " [ref=e97]
+              - button "Ver Detalles " [ref=e151]
+                - StaticText "Ver Detalles "
+            - button "" [ref=e98]
+              - StaticText ""
+      - generic
+        - generic
+          - link "Hendaia Playa – Urbanización Lissardy – Vivienda de 2 habs con 2..." [ref=e52]
+            - image "Hendaia Playa – Urbanización Lissardy – Vivienda de 2 habs con 2..."
+          - generic
+            - generic
+              - StaticText "40m"
+              - superscript
+                - StaticText "2"
+            - generic
+              - StaticText ""
+              - StaticText " 2"
+            - generic
+              - StaticText ""
+              - StaticText "1"
+          - link "Ver Detalles" [ref=e152]
+            - StaticText "Ver Detalles"
+            - StaticText ""
+        - generic
+          - link "Hendaia Playa – Urbanización Lissardy – Vivienda de 2 habs con 2..." [ref=e99]
+            - heading "Hendaia Playa – Urbanización Lissardy – Vivienda de 2 habs con 2..." [level=3, ref=e153]
+          - LabelText
+            - StaticText "COMPRAR"
+          - generic
+            - paragraph
+              - StaticText "64700 Hendaye, FR"
+            - paragraph
+              - StaticText "REF: 2359APE"
+            - paragraph
+              - StaticText "Hendaia Playa – Urbanización Lissardy – Vivienda de 2 habs con 2 Terrazas. Idealme..."
+            - paragraph
+              - StaticText "249.500,00 €"
+          - generic
+            - link "" [ref=e100]
+              - button "" [ref=e154]
+                - StaticText ""
+            - link "Pedir más información" [ref=e101]
+              - button [ref=e155]
+            - link "Ver Detalles " [ref=e102]
+              - button "Ver Detalles " [ref=e156]
+                - StaticText "Ver Detalles "
+            - button "" [ref=e103]
+              - StaticText ""
+      - generic
+        - generic
+          - link "Hendaya (64) – Magnífico piso de 2 habs, totalmente reformado, con..." [ref=e53]
+            - image "Hendaya (64) – Magnífico piso de 2 habs, totalmente reformado, con..."
+          - generic
+            - generic
+              - StaticText "70m"
+              - superscript
+                - StaticText "2"
+            - generic
+              - StaticText ""
+              - StaticText " 2"
+            - generic
+              - StaticText ""
+              - StaticText "1"
+          - link "Ver Detalles" [ref=e157]
+            - StaticText "Ver Detalles"
+            - StaticText ""
+        - generic
+          - link "Hendaya (64) – Magnífico piso de 2 habs, totalmente reformado, con..." [ref=e104]
+            - heading "Hendaya (64) – Magnífico piso de 2 habs, totalmente reformado, con..." [level=3, ref=e158]
+          - LabelText
+            - StaticText "COMPRAR"
+          - generic
+            - paragraph
+              - StaticText "64700 Hendaye, FR"
+            - paragraph
+              - StaticText "REF: 2338/APE"
+            - paragraph
+              - StaticText "Hendaya (64) – Magnífico piso de 2 habs, totalmente reformado, con dos balcones y trast..."
+            - paragraph
+              - StaticText "223.000,00 €"
+          - generic
+            - link "" [ref=e105]
+              - button "" [ref=e159]
+                - StaticText ""
+            - link "Pedir más información" [ref=e106]
+              - button [ref=e160]
+            - link "Ver Detalles " [ref=e107]
+              - button "Ver Detalles " [ref=e161]
+                - StaticText "Ver Detalles "
+            - button "" [ref=e108]
+              - StaticText ""
+      - generic
+        - generic
+          - link "¿Te gustaría disfrutar de tu propio Jardín Privado? ¡Descubre tu ..." [ref=e54]
+            - image "¿Te gustaría disfrutar de tu propio Jardín Privado? ¡Descubre tu ..."
+          - generic
+            - generic
+              - StaticText "81m"
+              - superscript
+                - StaticText "2"
+            - generic
+              - StaticText ""
+              - StaticText " 3"
+            - generic
+              - StaticText ""
+              - StaticText " 1"
+            - generic
+              - StaticText ""
+              - StaticText "2"
+            - generic
+              - StaticText ""
+              - StaticText " 1"
+          - link "Ver Detalles" [ref=e162]
+            - StaticText "Ver Detalles"
+            - StaticText ""
+        - generic
+          - link "¿Te gustaría disfrutar de tu propio Jardín Privado? ¡Descubre tu ..." [ref=e109]
+            - heading "¿Te gustaría disfrutar de tu propio Jardín Privado? ¡Descubre tu ..." [level=3, ref=e163]
+          - LabelText
+            - StaticText "COMPRAR"
+          - generic
+            - paragraph
+              - StaticText "64700 Hendaye, FR"
+            - paragraph
+              - StaticText "REF: F001"
+            - paragraph
+              - StaticText "¿Te gustaría disfrutar de tu propio Jardín Privado? ¡Descubre tu nuevo hogar en Hendai..."
+            - paragraph
+              - StaticText "451.000,00 €"
+          - generic
+            - link "" [ref=e110]
+              - button "" [ref=e164]
+                - StaticText ""
+            - link "Pedir más información" [ref=e111]
+              - button [ref=e165]
+            - link "Ver Detalles " [ref=e112]
+              - button "Ver Detalles " [ref=e166]
+                - StaticText "Ver Detalles "
+            - button "" [ref=e113]
+              - StaticText ""
+      - generic
+        - generic
+          - link "Arantza: Una vivienda especial, lista para disfrutarla desde el prime..." [ref=e55]
+            - image "Arantza: Una vivienda especial, lista para disfrutarla desde el prime..."
+          - generic
+            - generic
+              - StaticText "93m"
+              - superscript
+                - StaticText "2"
+            - generic
+              - StaticText ""
+              - StaticText " 2"
+            - generic
+              - StaticText ""
+              - StaticText " 1"
+            - generic
+              - StaticText ""
+              - StaticText "2"
+          - link "Ver Detalles" [ref=e167]
+            - StaticText "Ver Detalles"
+            - StaticText ""
+        - generic
+          - link "Arantza: Una vivienda especial, lista para disfrutarla desde el prime..." [ref=e114]
+            - heading "Arantza: Una vivienda especial, lista para disfrutarla desde el prime..." [level=3, ref=e168]
+          - LabelText
+            - StaticText "RESERVADO"
+          - generic
+            - paragraph
+              - StaticText "31790 Arantza, ES"
+            - paragraph
+              - StaticText "REF: P2594E"
+            - paragraph
+              - StaticText "¿Estás buscando una vivienda en un entorno idílico, que lo tenga todo para vivir de for..."
+            - paragraph
+              - StaticText "Precio consultar"
+          - generic
+            - link "" [ref=e115]
+              - button "" [ref=e169]
+                - StaticText ""
+            - link "Pedir más información" [ref=e116]
+              - button [ref=e170]
+            - link "Ver Detalles " [ref=e117]
+              - button "Ver Detalles " [ref=e171]
+                - StaticText "Ver Detalles "
+            - button "" [ref=e118]
+              - StaticText ""
+      - generic
+        - generic
+          - link "Espectacular piso en pleno centro con grandes vistas" [ref=e56]
+            - image "Espectacular piso en pleno centro con grandes vistas"
+          - generic
+            - generic
+              - StaticText "125m"
+              - superscript
+                - StaticText "2"
+            - generic
+              - StaticText ""
+              - StaticText " 3"
+            - generic
+              - StaticText ""
+              - StaticText "2"
+          - link "Ver Detalles" [ref=e172]
+            - StaticText "Ver Detalles"
+            - StaticText ""
+        - generic
+          - link "Espectacular piso en pleno centro con grandes vistas" [ref=e119]
+            - heading "Espectacular piso en pleno centro con grandes vistas" [level=3, ref=e173]
+          - LabelText
+            - StaticText "COMPRAR"
+          - generic
+            - paragraph
+              - StaticText "20302 Irun, ES"
+            - paragraph
+              - StaticText "REF: P2599E"
+            - paragraph
+              - StaticText "¿Estás buscando una vivienda grande, con vistas privilegiadas en una de las ubicaciones ..."
+            - paragraph
+              - StaticText "510.000,00 €"
+          - generic
+            - link "" [ref=e120]
+              - button "" [ref=e174]
+                - StaticText ""
+            - link "Pedir más información" [ref=e121]
+              - button [ref=e175]
+            - link "Ver Detalles " [ref=e122]
+              - button "Ver Detalles " [ref=e176]
+                - StaticText "Ver Detalles "
+            - button "" [ref=e123]
+              - StaticText ""
+      - generic
+        - generic
+          - link "Vivienda totalmente reformada en la Avenida de Navarra" [ref=e57]
+            - image "Vivienda totalmente reformada en la Avenida de Navarra"
+          - generic
+            - generic
+              - StaticText "78m"
+              - superscript
+                - StaticText "2"
+            - generic
+              - StaticText ""
+              - StaticText " 2"
+            - generic
+              - StaticText ""
+              - StaticText "1"
+          - link "Ver Detalles" [ref=e177]
+            - StaticText "Ver Detalles"
+            - StaticText ""
+        - generic
+          - link "Vivienda totalmente reformada en la Avenida de Navarra" [ref=e124]
+            - heading "Vivienda totalmente reformada en la Avenida de Navarra" [level=3, ref=e178]
+          - LabelText
+            - StaticText "RESERVADO"
+          - generic
+            - paragraph
+              - StaticText "20302 Irun, ES"
+            - paragraph
+              - StaticText "REF: P2598E"
+            - paragraph
+              - StaticText "Preciosa vivienda TOTALMENTE REFORMADA en pleno centro de Irún con maravillosas vistas y ..."
+            - paragraph
+              - StaticText "Precio consultar"
+          - generic
+            - link "" [ref=e125]
+              - button "" [ref=e179]
+                - StaticText ""
+            - link "Pedir más información" [ref=e126]
+              - button [ref=e180]
+            - link "Ver Detalles " [ref=e127]
+              - button "Ver Detalles " [ref=e181]
+                - StaticText "Ver Detalles "
+            - button "" [ref=e128]
+              - StaticText ""
+      - generic
+        - generic
+          - link "Ubicado en una de las zonas más demandadas de Hendaia, a solo 5 minu..." [ref=e58]
+            - image "Ubicado en una de las zonas más demandadas de Hendaia, a solo 5 minu..."
+          - generic
+            - generic
+              - StaticText "40m"
+              - superscript
+                - StaticText "2"
+            - generic
+              - StaticText ""
+              - StaticText " 1"
+            - generic
+              - StaticText ""
+              - StaticText "1"
+          - link "Ver Detalles" [ref=e182]
+            - StaticText "Ver Detalles"
+            - StaticText ""
+        - generic
+          - link "Ubicado en una de las zonas más demandadas de Hendaia, a solo 5 minu..." [ref=e129]
+            - heading "Ubicado en una de las zonas más demandadas de Hendaia, a solo 5 minu..." [level=3, ref=e183]
+          - LabelText
+            - StaticText "COMPRAR"
+          - generic
+            - paragraph
+              - StaticText "64700 Hendaye, FR"
+            - paragraph
+              - StaticText "REF: 2355/APE"
+            - paragraph
+              - StaticText "Ubicado en una de las zonas más demandadas de Hendaia, a solo 5 minutos a pie de la Playa..."
+            - paragraph
+              - StaticText "209.500,00 €"
+          - generic
+            - link "" [ref=e130]
+              - button "" [ref=e184]
+                - StaticText ""
+            - link "Pedir más información" [ref=e131]
+              - button [ref=e185]
+            - link "Ver Detalles " [ref=e132]
+              - button "Ver Detalles " [ref=e186]
+                - StaticText "Ver Detalles "
+            - button "" [ref=e133]
+              - StaticText ""
+      - generic
+        - generic
+          - link "Apartamento a pie de Playa – Bvd de la Mer, Hendaia." [ref=e59]
+            - image "Apartamento a pie de Playa – Bvd de la Mer, Hendaia."
+          - generic
+            - generic
+              - StaticText "30m"
+              - superscript
+                - StaticText "2"
+            - generic
+              - StaticText ""
+              - StaticText " 0"
+            - generic
+              - StaticText ""
+              - StaticText "1"
+          - link "Ver Detalles" [ref=e187]
+            - StaticText "Ver Detalles"
+            - StaticText ""
+        - generic
+          - link "Apartamento a pie de Playa – Bvd de la Mer, Hendaia." [ref=e134]
+            - heading "Apartamento a pie de Playa – Bvd de la Mer, Hendaia." [level=3, ref=e188]
+          - LabelText
+            - StaticText "COMPRAR"
+          - generic
+            - paragraph
+              - StaticText "64700 Hendaye, FR"
+            - paragraph
+              - StaticText "REF: 2354/APE"
+            - paragraph
+              - StaticText "Precioso y soleado apartamento, orientación sur, a pocos pasos de la Playa – Se vende ..."
+            - paragraph
+              - StaticText "209.500,00 €"
+          - generic
+            - link "" [ref=e135]
+              - button "" [ref=e189]
+                - StaticText ""
+            - link "Pedir más información" [ref=e136]
+              - button [ref=e190]
+            - link "Ver Detalles " [ref=e137]
+              - button "Ver Detalles " [ref=e191]
+                - StaticText "Ver Detalles "
+            - button "" [ref=e138]
+              - StaticText ""
+    - list
+      - StaticText "  "
+      - listitem [level=1]
+        - link "1" [ref=e12]
+      - listitem [level=1]
+        - link "2" [ref=e13]
+      - listitem [level=1]
+        - link "3" [ref=e14]
+      - listitem [level=1]
+        - link "4" [ref=e15]
+      - StaticText "  "
+  - generic
+    - heading "BÚSQUEDA AVANZADA" [level=3, ref=e16]
+      - StaticText "BÚSQUEDA AVANZADA"
+    - textbox "Referencia" [ref=e60]
+    - LayoutTable
+      - StaticText ""
+      - generic
+        - combobox "Transacción" [expanded=false, ref=e192]: Comprar
+          - MenuListPopup
+            - option [ref=e229]
+            - option "Transacción" [ref=e230]
+            - option "Comprar" [selected, ref=e231]
+            - option "Alquilar" [ref=e232]
+        - button "Comprar" [ref=e193]
+          - StaticText "Comprar"
+    - LayoutTable
+      - StaticText ""
+      - generic
+        - listbox "Tipo de Inmueble" [ref=e194]
+          - option "Piso" [selected, ref=e216]
+          - option "Casa" [ref=e217]
+          - option "Local" [ref=e218]
+          - option "Oficina" [ref=e219]
+          - option "Suelo" [ref=e220]
+          - option "Trastero" [ref=e221]
+          - option "Ático" [ref=e222]
+          - option "Parking" [ref=e223]
+        - button "Piso" [ref=e195]
+          - StaticText "Piso"
+    - LayoutTable
+      - StaticText ""
+      - generic
+        - listbox "¿Donde?" [ref=e196]
+          - option "Irun" [ref=e224]
+          - option "Arcangues" [ref=e225]
+          - option "Hendaye" [selected, ref=e226]
+          - option "Bagnères-de-Bigorre" [ref=e227]
+          - option "Arantza" [ref=e228]
+        - button "Hendaye" [ref=e197]
+          - StaticText "Hendaye"
+    - LayoutTable
+      - StaticText ""
+      - generic
+        - combobox "Zonas" [expanded=false, ref=e198]
+          - MenuListPopup
+            - option [selected, ref=e233]
+            - option "AGUERRIA" [ref=e234]
+            - option "Bahía" [ref=e235]
+            - option "Bahía de Txingudi." [ref=e236]
+            - option "Baie de txingudi" [ref=e237]
+            - option "Behobie" [ref=e238]
+            - option "Belcenia" [ref=e239]
+            - option "Bergerie" [ref=e240]
+            - option "CENTRE" [ref=e241]
+            - option "Centre ville" [ref=e242]
+            - option "Centro" [ref=e243]
+            - option "EMPEREUR" [ref=e244]
+            - option "Hauteurs d'Hendaye" [ref=e245]
+            - option "hendaye" [ref=e246]
+            - option "Joncaux" [ref=e247]
+            - option "Orio" [ref=e248]
+            - option "País Vasco francés - Hendaye" [ref=e249]
+            - option "PLAGE" [ref=e250]
+            - option "PLAYA" [ref=e251]
+            - option "Rue du commerce" [ref=e252]
+            - option "Rue du pont" [ref=e253]
+            - option "SANTIAGO" [ref=e254]
+            - option "VILLE" [ref=e255]
+        - button "Zonas" [ref=e199]
+          - StaticText "Zonas"
+    - LayoutTable
+      - StaticText ""
+      - generic
+        - combobox "Habs." [expanded=false, ref=e200]
+          - MenuListPopup
+            - option [selected, ref=e256]
+            - option "Habs." [ref=e257]
+            - option "1" [ref=e258]
+            - option "2" [ref=e259]
+            - option "3" [ref=e260]
+            - option "4" [ref=e261]
+            - option "5 o +" [ref=e262]
+        - button "Habs." [ref=e201]
+          - StaticText "Habs."
+    - LayoutTable
+      - StaticText ""
+      - generic
+        - combobox [expanded=false, ref=e202]: Baños
+          - MenuListPopup
+            - option "Baños" [selected, ref=e263]
+            - option "1" [ref=e264]
+            - option "2" [ref=e265]
+            - option "3" [ref=e266]
+            - option "4" [ref=e267]
+            - option "5 o +" [ref=e268]
+        - button "Baños" [ref=e203]
+          - StaticText "Baños"
+    - LayoutTable
+      - StaticText ""
+      - generic
+        - generic
+          - combobox [expanded=false, ref=e204]: Presupuesto
+            - MenuListPopup
+              - option "Presupuesto" [selected, ref=e269]
+              - option "50.000 €" [ref=e270]
+              - option "100.000 €" [ref=e271]
+              - option "150.000 €" [ref=e272]
+              - option "200.000 €" [ref=e273]
+              - option "250.000 €" [ref=e274]
+              - option "300.000 €" [ref=e275]
+              - option "350.000 €" [ref=e276]
+              - option "400.000 €" [ref=e277]
+              - option "450.000 €" [ref=e278]
+              - option "500.000 €" [ref=e279]
+              - option "600.000 €" [ref=e280]
+              - option "800.000 €" [ref=e281]
+              - option "1.000.000 €" [ref=e282]
+              - option "2.000.000 €" [ref=e283]
+              - option "2.000.000 € o +" [ref=e284]
+          - button "Presupuesto" [ref=e205]
+            - StaticText "Presupuesto"
+    - LayoutTable
+      - StaticText ""
+      - generic
+        - combobox [expanded=false, ref=e206]: Estado
+          - MenuListPopup
+            - option "Estado" [selected, ref=e285]
+            - option "Nuevo" [ref=e286]
+            - option "Segunda Mano" [ref=e287]
+            - option "En construcción" [ref=e288]
+        - button "Estado" [ref=e207]
+          - StaticText "Estado"
+    - button "Buscar" [ref=e61]
+      - StaticText "Buscar"
+    - link "Opciones" [ref=e62]
+      - StaticText "Opciones"
+    - generic
+      - heading "NUEVOS INMUEBLES" [level=3, ref=e17]
+        - StaticText "NUEVOS INMUEBLES"
+      - link "Villa señorial en Hendaya – Zona de standing de Lissardy " [ref=e63]
+        - image "Villa señorial en Hendaya – Zona de standing de Lissardy "
+      - heading "Villa señorial en Hendaya – Zona de standing de Lissardy" [level=4, ref=e18]
+        - link "Villa señorial en Hendaya – Zona de standing de Lissardy" [ref=e64]
+      - paragraph
+        - StaticText "64700 Hendaye, FR"
+      - StaticText "748.900,00€"
+      - link "Elegante propiedad completamente reformada – Orientación sur – Vistas a la montaña – Piscina climatizada" [ref=e65]
+        - image "Elegante propiedad completamente reformada – Orientación sur – Vistas a la montaña – Piscina climatizada"
+      - heading "Elegante propiedad completamente reformada – Orientación sur – Vistas a la montaña – Piscina climatizada" [level=4, ref=e19]
+        - link "Elegante propiedad completamente reformada – Orientación sur – Vistas a la montaña – Piscina climatizada" [ref=e66]
+      - paragraph
+        - StaticText "64700 Hendaye, FR"
+      - StaticText "898.000,00€"
+      - link "Hendaia Playa – Urbanización Lissardy – Vivienda de 2 habs con 2 Terrazas." [ref=e67]
+        - image "Hendaia Playa – Urbanización Lissardy – Vivienda de 2 habs con 2 Terrazas."
+      - heading "Hendaia Playa – Urbanización Lissardy – Vivienda de 2 habs con 2 Terrazas." [level=4, ref=e20]
+        - link "Hendaia Playa – Urbanización Lissardy – Vivienda de 2 habs con 2 Terrazas." [ref=e68]
+      - paragraph
+        - StaticText "64700 Hendaye, FR"
+      - StaticText "249.500,00€"
+      - link "Hendaya (64) – Magnífico piso de 2 habs, totalmente reformado, con dos balcones y trastero" [ref=e69]
+        - image "Hendaya (64) – Magnífico piso de 2 habs, totalmente reformado, con dos balcones y trastero"
+      - heading "Hendaya (64) – Magnífico piso de 2 habs, totalmente reformado, con dos balcones y trastero" [level=4, ref=e21]
+        - link "Hendaya (64) – Magnífico piso de 2 habs, totalmente reformado, con dos balcones y trastero" [ref=e70]
+      - paragraph
+        - StaticText "64700 Hendaye, FR"
+      - StaticText "223.000,00€"
+      - link "¿Te gustaría disfrutar de tu propio Jardín Privado? ¡Descubre tu nuevo hogar en Hendaia - Playa! Este espectacular piso de 3 habitaciones y 2 baños es la opción perfecta para quienes buscan comodidad y calidad de vida" [ref=e71]
+        - image "¿Te gustaría disfrutar de tu propio Jardín Privado? ¡Descubre tu nuevo hogar en Hendaia - Playa! Este espectacular piso de 3 habitaciones y 2 baños es la opción perfecta para quienes buscan comodidad y calidad de vida"
+      - heading "¿Te gustaría disfrutar de tu propio Jardín Privado? ¡Descubre tu nuevo hogar en Hendaia - Playa! Este espectacular piso de 3 habitaciones y 2 baños es la opción perfecta para quienes buscan comodidad y calidad de vida" [level=4, ref=e22]
+        - link "¿Te gustaría disfrutar de tu propio Jardín Privado? ¡Descubre tu nuevo hogar en Hendaia - Playa! Este espectacular piso de 3 habitaciones y 2 baños es la opción perfecta para quienes buscan comodidad y calidad de vida" [ref=e72]
+      - paragraph
+        - StaticText "64700 Hendaye, FR"
+      - StaticText "451.000,00€"
+      - link "Arantza: Una vivienda especial, lista para disfrutarla desde el primer día." [ref=e73]
+        - image "Arantza: Una vivienda especial, lista para disfrutarla desde el primer día."
+      - heading "Arantza: Una vivienda especial, lista para disfrutarla desde el primer día." [level=4, ref=e23]
+        - link "Arantza: Una vivienda especial, lista para disfrutarla desde el primer día." [ref=e74]
+      - paragraph
+        - StaticText "31790 Arantza, ES"
+      - StaticText "Precio consultar"
+      - link "Espectacular piso en pleno centro con grandes vistas" [ref=e75]
+        - image "Espectacular piso en pleno centro con grandes vistas"
+      - heading "Espectacular piso en pleno centro con grandes vistas" [level=4, ref=e24]
+        - link "Espectacular piso en pleno centro con grandes vistas" [ref=e76]
+      - paragraph
+        - StaticText "20302 Irun, ES"
+      - StaticText "510.000,00€"
+      - link "Vivienda totalmente reformada en la Avenida de Navarra" [ref=e77]
+        - image "Vivienda totalmente reformada en la Avenida de Navarra"
+      - heading "Vivienda totalmente reformada en la Avenida de Navarra" [level=4, ref=e25]
+        - link "Vivienda totalmente reformada en la Avenida de Navarra" [ref=e78]
+      - paragraph
+        - StaticText "20302 Irun, ES"
+      - StaticText "Precio consultar"
+      - link "Ubicado en una de las zonas más demandadas de Hendaia, a solo 5 minutos a pie de la Playa, magnífico apartamento totalmente reformado." [ref=e79]
+        - image "Ubicado en una de las zonas más demandadas de Hendaia, a solo 5 minutos a pie de la Playa, magnífico apartamento totalmente reformado."
+      - heading "Ubicado en una de las zonas más demandadas de Hendaia, a solo 5 minutos a pie de la Playa, magnífico apartamento totalmente reformado." [level=4, ref=e26]
+        - link "Ubicado en una de las zonas más demandadas de Hendaia, a solo 5 minutos a pie de la Playa, magnífico apartamento totalmente reformado." [ref=e80]
+      - paragraph
+        - StaticText "64700 Hendaye, FR"
+      - StaticText "209.500,00€"
+      - link "Apartamento a pie de Playa – Bvd de la Mer, Hendaia." [ref=e81]
+        - image "Apartamento a pie de Playa – Bvd de la Mer, Hendaia."
+      - heading "Apartamento a pie de Playa – Bvd de la Mer, Hendaia." [level=4, ref=e27]
+        - link "Apartamento a pie de Playa – Bvd de la Mer, Hendaia." [ref=e82]
+      - paragraph
+        - StaticText "64700 Hendaye, FR"
+      - StaticText "209.500,00€"
+      - link "Villa con jardín – Barrio muy demandado de Lissardy en Hendaya Playa – Tranquilidad absoluta, cerca de la Playa" [ref=e83]
+        - image "Villa con jardín – Barrio muy demandado de Lissardy en Hendaya Playa – Tranquilidad absoluta, cerca de la Playa"
+      - heading "Villa con jardín – Barrio muy demandado de Lissardy en Hendaya Playa – Tranquilidad absoluta, cerca de la Playa" [level=4, ref=e28]
+        - link "Villa con jardín – Barrio muy demandado de Lissardy en Hendaya Playa – Tranquilidad absoluta, cerca de la Playa" [ref=e84]
+      - paragraph
+        - StaticText "64700 Hendaye, FR"
+      - StaticText "498.900,00€"
+  - generic
+    - StaticText ""
+    - list
+      - listitem [level=1]
+        - heading "Agencia Inmobiliaria" [level=4, ref=e29]
+      - listitem [level=1]
+        - paragraph
+          - StaticText "a ambos lados del Bidasoa"
+  - generic
+    - StaticText ""
+    - list
+      - listitem [level=1]
+        - heading "Teléfono" [level=4, ref=e30]
+      - listitem [level=1]
+        - paragraph
+          - link "(+34) 943 90 55 37" [ref=e85]
+  - generic
+    - StaticText ""
+    - list
+      - listitem [level=1]
+        - heading "Contacta con Nosotros" [level=4, ref=e31]
+          - link "Contacta con Nosotros" [ref=e86]
+      - listitem [level=1]
+        - paragraph
+          - link "Envienos un Mensaje" [ref=e87]
+  - contentinfo
+    - heading "CONTACTA CON NOSOTROS" [level=4, ref=e4]
+    - paragraph
+      - StaticText "Palacio de Arbelaitz, Calle Iglesia 8 20302 Irun, Gipuzkoa, España"
+    - list
+      - listitem [level=1]
+        - link " (+34) 943 90 55 37" [ref=e32]
+          - StaticText ""
+          - StaticText "(+34) 943 90 55 37"
+      - listitem [level=1]
+        - link " Facebook" [ref=e33]
+          - StaticText ""
+          - StaticText " Facebook"
+      - listitem [level=1]
+        - link " Instagram" [ref=e34]
+          - StaticText ""
+          - StaticText " Instagram"
+      - listitem [level=1]
+        - link " www.inmobiliariaiparralde.com" [ref=e35]
+          - StaticText ""
+          - StaticText "www.inmobiliariaiparralde.com"
+      - listitem [level=1]
+        - link " Contacta con Nosotros" [ref=e36]
+          - StaticText ""
+          - StaticText "Contacta con Nosotros"
+      - listitem [level=1]
+        - link " Trabaja con nosotros" [ref=e37]
+          - StaticText ""
+          - StaticText "Trabaja con nosotros"
+    - heading "IPARRALDE INMOBILIARIA" [level=4, ref=e5]
+    - list
+      - listitem [level=1]
+        - StaticText ""
+        - link "Inicio" [ref=e38]
+      - listitem [level=1]
+        - StaticText ""
+        - link "Inmuebles" [ref=e39]
+      - listitem [level=1]
+        - StaticText ""
+        - link "Vender" [ref=e40]
+      - listitem [level=1]
+        - StaticText ""
+        - link "Buscador Avanzado" [ref=e41]
+      - listitem [level=1]
+        - StaticText ""
+        - link "Quienes Somos" [ref=e42]
+      - listitem [level=1]
+        - StaticText ""
+        - link "Servicios" [ref=e43]
+      - listitem [level=1]
+        - StaticText ""
+        - link "Noticias" [ref=e44]
+    - heading "PROPIEDADES INMOBILIARIAS" [level=4, ref=e6]
+    - list
+      - listitem [level=1]
+        - StaticText ""
+        - link "Comprar Pisos" [ref=e45]
+      - listitem [level=1]
+        - StaticText ""
+        - link "Comprar Casas" [ref=e46]
+      - listitem [level=1]
+        - StaticText ""
+        - link "Comprar Locales" [ref=e47]
+      - listitem [level=1]
+        - StaticText ""
+        - link "Alquilar Inmuebles" [ref=e48]
+      - listitem [level=1]
+        - StaticText ""
+        - link "Comprar Garajes" [ref=e49]
+    - heading "HORARIO DE APERTURA OFICINA" [level=4, ref=e7]
+    - list
+      - listitem [level=1]
+        - StaticText "Lun - Vie :"
+        - StaticText "9:30 - 13:00 / 16:00 - 19:00"
+      - listitem [level=1]
+        - StaticText "Sab - Dom :"
+        - StaticText "Cerrado"
+    - paragraph
+      - StaticText "© 2026 "
+      - link "Iparralde Inmobiliaria | Pisos en Irún" [ref=e9]
+      - StaticText ". Todos los derechos reservados | "
+      - link "Avisos Legales" [ref=e10]
+      - StaticText " | "
+      - link "Política de privacidad" [ref=e11]
+  - generic
+    - StaticText "Utilizamos cookies en nuestro website. Puede leer nuestra "
+    - link "politica de cookies " [ref=e1]
+    - StaticText ". "
+    - link "ACEPTAR COOKIES" [ref=e2]
+- StaticText "  "
+- StaticText "  "
