@@ -12,11 +12,9 @@ module.exports = {
     try {
       // Go directly to listings page  
       await page.goto('https://inmobiliariaiparralde.com/inmuebles/listado_de_inmuebles', { 
-        waitUntil: 'networkidle',
-        timeout: 30000 
+        waitUntil: 'domcontentloaded',  // Faster than networkidle
+        timeout: 60000                  // 60 seconds for slow networks
       });
-
-      await page.waitForLoadState('networkidle');
 
       // Extract listings - deduplicate by ID and extract data properly
       const listings = await page.evaluate(() => {
