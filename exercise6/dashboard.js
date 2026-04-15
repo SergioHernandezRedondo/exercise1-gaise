@@ -88,10 +88,10 @@ app.get('/api/listings', async (req, res) => {
     const siteId = req.query.site || 'iparralde';
     const sort = req.query.sort || 'price_asc';
     
-    const result = await db.client.execute(
-      'SELECT * FROM listings_current WHERE site_id = ? ORDER BY price_num ASC LIMIT 1000',
-      [siteId]
-    );
+    const result = await db.client.execute({
+      sql: 'SELECT * FROM listings_current WHERE siteId = ? ORDER BY price_num ASC LIMIT 1000',
+      args: [siteId]
+    });
 
     const listings = result.rows.map(r => ({
       id: r.id,
@@ -99,7 +99,7 @@ app.get('/api/listings', async (req, res) => {
       price: r.price,
       price_num: r.price_num,
       location: r.location,
-      detailUrl: r.detail_url || '#',
+      detailUrl: r.url || '#',
       lastSeen: r.last_seen,
       firstSeen: r.first_seen,
       missCount: r.miss_count || 0
@@ -117,22 +117,22 @@ app.get('/api/changes', async (req, res) => {
     const siteId = req.query.site || 'iparralde';
     const limit = parseInt(req.query.limit, 10) || 100;
 
-    const result = await db.client.execute(
-      `SELECT lc.*, l.title, l.price 
+    const result = await db.client.execute({
+      sql: `SELECT lc.*, l.title, l.price 
        FROM listing_changes lc
        LEFT JOIN listings_current l ON lc.listing_id = l.id
-       WHERE lc.site_id = ?
+       WHERE lc.siteId = ?
        ORDER BY lc.created_at DESC
        LIMIT ?`,
-      [siteId, limit]
-    );
+      args: [siteId, limit]
+    });
 
     const changes = result.rows.map(r => ({
       id: r.id,
       listing_id: r.listing_id,
       title: r.title || `Listing ${r.listing_id}`,
       change_type: r.change_type,
-      diff_json: r.diff_json ? JSON.parse(r.diff_json) : [],
+      diff_json: r.diff_json ? (typeof r.diff_json === 'string' ? JSON.parse(r.diff_json) : r.diff_json) : [],
       created_at: r.created_at,
       timestamp: new Date(r.created_at).toLocaleString()
     }));
@@ -149,20 +149,20 @@ app.get('/api/stats', async (req, res) => {
     const siteId = req.query.site || 'iparralde';
 
     // Total active listings
-    const totalResult = await db.client.execute(
-      'SELECT COUNT(*) as count FROM listings_current WHERE site_id = ?',
-      [siteId]
-    );
+    const totalResult = await db.client.execute({
+      sql: 'SELECT COUNT(*) as count FROM listings_current WHERE siteId = ?',
+      args: [siteId]
+    });
     const totalListings = totalResult.rows[0]?.count || 0;
 
     // Recent changes (last 24 hours)
-    const changesResult = await db.client.execute(
-      `SELECT change_type, COUNT(*) as count 
+    const changesResult = await db.client.execute({
+      sql: `SELECT change_type, COUNT(*) as count 
        FROM listing_changes 
-       WHERE site_id = ? AND created_at > datetime('now', '-24 hours')
+       WHERE siteId = ? AND created_at > datetime('now', '-24 hours')
        GROUP BY change_type`,
-      [siteId]
-    );
+      args: [siteId]
+    });
     
     const changes24h = {};
     changesResult.rows.forEach(r => {
@@ -170,10 +170,10 @@ app.get('/api/stats', async (req, res) => {
     });
 
     // Average price
-    const priceResult = await db.client.execute(
-      'SELECT AVG(price_num) as avg_price, MIN(price_num) as min_price, MAX(price_num) as max_price FROM listings_current WHERE site_id = ?',
-      [siteId]
-    );
+    const priceResult = await db.client.execute({
+      sql: 'SELECT AVG(price_num) as avg_price, MIN(price_num) as min_price, MAX(price_num) as max_price FROM listings_current WHERE siteId = ?',
+      args: [siteId]
+    });
     
     const avgPrice = Math.round(priceResult.rows[0]?.avg_price || 0);
     const minPrice = priceResult.rows[0]?.min_price || 0;
@@ -181,16 +181,16 @@ app.get('/api/stats', async (req, res) => {
 
     // Price distribution (histogram buckets)
     const bucketSize = 50000;
-    const histResult = await db.client.execute(
-      `SELECT 
+    const histResult = await db.client.execute({
+      sql: `SELECT 
         CAST(CAST(price_num / ? AS INTEGER) * ? AS INTEGER) as bucket, 
         COUNT(*) as count 
        FROM listings_current 
-       WHERE site_id = ? 
+       WHERE siteId = ? 
        GROUP BY bucket
        ORDER BY bucket`,
-      [bucketSize, bucketSize, siteId]
-    );
+      args: [bucketSize, bucketSize, siteId]
+    });
 
     const priceHistogram = [];
     histResult.rows.forEach(r => {
@@ -225,10 +225,10 @@ app.get('/api/stats', async (req, res) => {
 // Get sites list
 app.get('/api/sites', async (req, res) => {
   try {
-    const result = await db.client.execute(
-      'SELECT DISTINCT site_id FROM listings_current'
-    );
-    const sites = result.rows.map(r => r.site_id);
+    const result = await db.client.execute({
+      sql: 'SELECT DISTINCT siteId FROM listings_current'
+    });
+    const sites = result.rows.map(r => r.siteId);
     res.json({ success: true, data: sites || ['iparralde'] });
   } catch (err) {
     res.json({ success: true, data: ['iparralde'] });
