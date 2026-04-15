@@ -6,6 +6,7 @@ const minimist = require('minimist');
 const ApartmentsDB = require('./database');
 const { detectChanges, summarizeChanges } = require('./lib/changeDetection');
 const TelegramNotifier = require('./lib/notifications');
+const Scheduler = require('./lib/scheduler');
 
 // Parse command-line arguments
 const argv = minimist(process.argv.slice(2));
@@ -17,6 +18,8 @@ function printUsage() {
   node scrape.js --status
   node scrape.js --changes [--site <site>] [--limit 50]
   node scrape.js --test-notifications
+  node scrape.js --schedule "<cron>" [--with-health <port>]
+  node scrape.js --once
   
 Examples:
   node scrape.js --site iparralde
@@ -26,16 +29,22 @@ Examples:
   node scrape.js --status
   node scrape.js --changes --site iparralde --limit 20
   node scrape.js --test-notifications
+  node scrape.js --schedule "*/30 * * * *"
+  node scrape.js --schedule "*/15 * * * *" --with-health 3000
+  node scrape.js --once
   node scrape.js --site iparralde --filters.municipality Hendaye
   
 Options:
-  --site                   Adapter to use (required, except with --status and --changes)
+  --site                   Adapter to use (required, except with --status, --changes, --schedule, --once)
   --out                    Output file (default: stdout as JSON)
   --persist                Store results and detect changes (M3: Milestone 3)
   --dry-run                Show what would change without writing to DB
   --status                 Show database status
   --changes                Show recent change events (audit trail)
   --test-notifications     Test Telegram bot connection (M4: Milestone 4)
+  --schedule               Run scheduler with cron expression (M5: Milestone 5)
+  --once                   Run all sites once and exit (M5: Milestone 5)
+  --with-health <port>     Enable health-check HTTP server (optional with --schedule)
   --limit                  Number of recent changes to show (default: 50)
   --filters.*              Custom filter parameters (e.g., --filters.municipality Hendaye)
   `);
@@ -137,12 +146,35 @@ if (argv.status) {
       process.exit(1);
     }
   })();
+} else if (argv.schedule) {
+  // Handle --schedule flag (Milestone 5)
+  require('dotenv').config();
+  
+  const cronExpression = argv.schedule;
+  const withHealth = argv['with-health'];
+  const enableNotifications = process.env.ENABLE_NOTIFICATIONS !== 'false';
+
+  const scheduler = new Scheduler(cronExpression, enableNotifications);
+  
+  if (withHealth) {
+    scheduler.startHealthServer(parseInt(withHealth, 10));
+  }
+
+  scheduler.start();
+  // Scheduler runs indefinitely until Ctrl+C
+} else if (argv.once) {
+  // Handle --once flag (Milestone 5) - run all sites once and exit
+  require('dotenv').config();
+
+  const enableNotifications = process.env.ENABLE_NOTIFICATIONS !== 'false';
+  const scheduler = new Scheduler('*/15 * * * *', enableNotifications); // cron doesn't matter for --once
+  scheduler.runOnce();
 } else {
   // Main scraping mode (NOT status or changes mode)
   
   // Validate required arguments
   if (!argv.site) {
-    console.error('Error: --site is required (except with --status and --changes)\n');
+    console.error('Error: --site is required (except with --status, --changes, --schedule, and --once)\n');
     printUsage();
     process.exit(1);
   }
