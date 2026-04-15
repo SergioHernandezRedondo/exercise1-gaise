@@ -95,6 +95,22 @@ function getChangeTypeColor(changeType) {
   return colors[changeType] || 'secondary';
 }
 
+/**
+ * Copy text to clipboard
+ */
+function copyToClipboard(text) {
+  navigator.clipboard.writeText(text).then(() => {
+    // Show brief toast-like notification
+    const originalText = event.target.innerHTML;
+    event.target.innerHTML = '<i class="bi bi-check"></i> Copied!';
+    setTimeout(() => {
+      event.target.innerHTML = originalText;
+    }, 2000);
+  }).catch(() => {
+    alert(`Copy failed. Text: ${text}`);
+  });
+}
+
 // Update footer on page load
 document.addEventListener('DOMContentLoaded', () => {
   updateFooterStatus();

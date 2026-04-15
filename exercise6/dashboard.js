@@ -118,17 +118,18 @@ app.get('/api/changes', async (req, res) => {
     const limit = parseInt(req.query.limit, 10) || 100;
 
     const result = await db.client.execute({
-      sql: `SELECT lc.*, l.title, l.price 
+      sql: `SELECT lc.*, l.title, l.price, sr.siteId
        FROM listing_changes lc
        LEFT JOIN listings_current l ON lc.listing_id = l.id
-       WHERE lc.siteId = ?
+       LEFT JOIN scrape_runs sr ON lc.run_id = sr.run_id
+       WHERE sr.siteId = ?
        ORDER BY lc.created_at DESC
        LIMIT ?`,
       args: [siteId, limit]
     });
 
     const changes = result.rows.map(r => ({
-      id: r.id,
+      id: r.change_id || r.id,
       listing_id: r.listing_id,
       title: r.title || `Listing ${r.listing_id}`,
       change_type: r.change_type,
@@ -157,10 +158,11 @@ app.get('/api/stats', async (req, res) => {
 
     // Recent changes (last 24 hours)
     const changesResult = await db.client.execute({
-      sql: `SELECT change_type, COUNT(*) as count 
-       FROM listing_changes 
-       WHERE siteId = ? AND created_at > datetime('now', '-24 hours')
-       GROUP BY change_type`,
+      sql: `SELECT lc.change_type, COUNT(*) as count 
+       FROM listing_changes lc
+       LEFT JOIN scrape_runs sr ON lc.run_id = sr.run_id
+       WHERE sr.siteId = ? AND lc.created_at > datetime('now', '-24 hours')
+       GROUP BY lc.change_type`,
       args: [siteId]
     });
     
@@ -263,7 +265,12 @@ async function start() {
   try {
     db = new ApartmentsDB();
     
-    app.listen(PORT, () => {
+    // Initialize database tables
+    console.log('📦 Initializing database...');
+    await db.init();
+    console.log('✅ Database initialized');
+    
+    const server = app.listen(PORT, () => {
       console.log(`\n🌐 Dashboard running at http://localhost:${PORT}`);
       console.log(`\n📊 Views:`);
       console.log(`   http://localhost:${PORT}/         - Listings`);
@@ -275,9 +282,13 @@ async function start() {
     // Graceful shutdown
     process.on('SIGINT', async () => {
       console.log('\n\n🛑 Shutting down dashboard...');
-      await db.close();
-      console.log('✅ Database closed');
-      process.exit(0);
+      server.close(async () => {
+        if (db && db.close) {
+          await db.close();
+        }
+        console.log('✅ Database closed');
+        process.exit(0);
+      });
     });
 
   } catch (err) {
