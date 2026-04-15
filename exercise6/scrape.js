@@ -5,6 +5,7 @@ const path = require('path');
 const minimist = require('minimist');
 const ApartmentsDB = require('./database');
 const { detectChanges, summarizeChanges } = require('./lib/changeDetection');
+const TelegramNotifier = require('./lib/notifications');
 
 // Parse command-line arguments
 const argv = minimist(process.argv.slice(2));
@@ -15,6 +16,7 @@ function printUsage() {
   node scrape.js --site <siteId> [--out <file>] [--persist] [--dry-run] [--filters.key value]
   node scrape.js --status
   node scrape.js --changes [--site <site>] [--limit 50]
+  node scrape.js --test-notifications
   
 Examples:
   node scrape.js --site iparralde
@@ -23,17 +25,19 @@ Examples:
   node scrape.js --site iparralde --persist --dry-run
   node scrape.js --status
   node scrape.js --changes --site iparralde --limit 20
+  node scrape.js --test-notifications
   node scrape.js --site iparralde --filters.municipality Hendaye
   
 Options:
-  --site       Adapter to use (required, except with --status and --changes)
-  --out        Output file (default: stdout as JSON)
-  --persist    Store results and detect changes (M3: Milestone 3)
-  --dry-run    Show what would change without writing to DB
-  --status     Show database status
-  --changes    Show recent change events (audit trail)
-  --limit      Number of recent changes to show (default: 50)
-  --filters.*  Custom filter parameters (e.g., --filters.municipality Hendaye)
+  --site                   Adapter to use (required, except with --status and --changes)
+  --out                    Output file (default: stdout as JSON)
+  --persist                Store results and detect changes (M3: Milestone 3)
+  --dry-run                Show what would change without writing to DB
+  --status                 Show database status
+  --changes                Show recent change events (audit trail)
+  --test-notifications     Test Telegram bot connection (M4: Milestone 4)
+  --limit                  Number of recent changes to show (default: 50)
+  --filters.*              Custom filter parameters (e.g., --filters.municipality Hendaye)
   `);
 }
 
@@ -106,6 +110,33 @@ if (argv.status) {
       process.exit(1);
     }
   })();
+} else if (argv['test-notifications']) {
+  // Handle --test-notifications flag (test Telegram connection)
+  (async () => {
+    try {
+      const notifier = new TelegramNotifier();
+      console.error('\n🧪 Testing Telegram Notifications...\n');
+
+      const result = await notifier.testConnection();
+      
+      if (result.success) {
+        console.error(`✅ ${result.message}`);
+        console.error('\nIf you received a test message in Telegram, you are all set!');
+      } else {
+        console.error(`❌ ${result.message}`);
+        console.error('\nPlease check:');
+        console.error('  1. ENABLE_NOTIFICATIONS=true in .env');
+        console.error('  2. TELEGRAM_BOT_TOKEN is set correctly');
+        console.error('  3. TELEGRAM_CHAT_ID is set correctly');
+        console.error('  4. Your bot is working (test manually with curl)');
+      }
+
+      process.exit(result.success ? 0 : 1);
+    } catch (err) {
+      console.error('Error testing notifications:', err.message);
+      process.exit(1);
+    }
+  })();
 } else {
   // Main scraping mode (NOT status or changes mode)
   
@@ -144,10 +175,18 @@ if (argv.status) {
   async function main() {
     let db = null;
     let runId = null;
+    let notifier = null;
 
     try {
       console.error(`Scraping ${siteId}...`);
       
+      // Initialize notifications (disabled during dry-run)
+      notifier = new TelegramNotifier();
+      if (dryRun) {
+        // Force disable notifications during dry-run
+        notifier.enabled = false;
+      }
+
       // Initialize database
       db = new ApartmentsDB();
 
@@ -196,6 +235,11 @@ if (argv.status) {
         console.error(`  new: ${summary.new}`);
         console.error(`  attributes_changed: ${summary.attributes_changed}`);
         console.error(`  removed: ${summary.removed}`);
+
+        // Milestone 4: Send notifications
+        if (notifier && notifier.enabled) {
+          await notifier.notifyChangedListings(siteId, changes);
+        }
 
         if (dryRun) {
           console.error('\n=== DRY RUN (no DB writes) ===');
@@ -247,6 +291,11 @@ if (argv.status) {
       }
 
     } catch (err) {
+      // Milestone 4: Notify about errors
+      if (notifier && notifier.enabled) {
+        await notifier.notifyError(siteId, err.message).catch(() => {});
+      }
+
       if (runId && argv.persist && db) {
         await db.finishRun(runId, 'failed', 0, err.message).catch(() => {});
       }
