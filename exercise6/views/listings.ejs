@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Current Listings - Real Estate Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">🏠 Real Estate Dashboard</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="/listings"><i class="bi bi-list"></i> Listings</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/changes"><i class="bi bi-clock-history"></i> Changes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/stats"><i class="bi bi-bar-chart"></i> Stats</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid mt-4 mb-5">
+    <div class="row mb-4">
+      <div class="col-md-6">
+        <h1><i class="bi bi-list"></i> Current Listings</h1>
+      </div>
+      <div class="col-md-6 text-end">
+        <div class="btn-group" role="group">
+          <button type="button" class="btn btn-outline-secondary btn-sm" id="sortPrice">
+            <i class="bi bi-sort-up"></i> Price
+          </button>
+          <button type="button" class="btn btn-outline-secondary btn-sm" id="sortLocation">
+            <i class="bi bi-sort-down"></i> Location
+          </button>
+          <button type="button" class="btn btn-outline-secondary btn-sm" id="refreshBtn">
+            <i class="bi bi-arrow-clockwise"></i> Refresh
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stats Cards -->
+    <div class="row mb-4" id="statsCards">
+      <div class="col-md-3">
+        <div class="card bg-light">
+          <div class="card-body">
+            <h6 class="card-title text-muted">Total Listings</h6>
+            <h3 id="totalListings">-</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card bg-light">
+          <div class="card-body">
+            <h6 class="card-title text-muted">Avg Price</h6>
+            <h3 id="avgPrice">-</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card bg-light">
+          <div class="card-body">
+            <h6 class="card-title text-muted">Price Range</h6>
+            <h6 id="priceRange">-</h6>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card bg-light">
+          <div class="card-body">
+            <h6 class="card-title text-muted">Last Updated</h6>
+            <small id="lastUpdated">Never</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Listings Table -->
+    <div class="card">
+      <div class="table-responsive">
+        <table class="table table-hover mb-0">
+          <thead class="table-dark">
+            <tr>
+              <th>ID</th>
+              <th>Title</th>
+              <th>Price</th>
+              <th>Location</th>
+              <th>First Seen</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="listingsTable">
+            <tr class="text-center text-muted">
+              <td colspan="6"><i class="bi bi-hourglass-split"></i> Loading listings...</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-dark text-light mt-5 py-4 fixed-bottom w-100">
+    <div class="container-fluid text-center small">
+      <span id="footer-status">Loading status...</span>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/js/listings.js"></script>
+</body>
+</html>
