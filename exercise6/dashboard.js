@@ -291,6 +291,18 @@ async function start() {
       });
     });
 
+    // Keep the event loop alive in server environments
+    // This prevents the process from exiting immediately
+    const keepAlive = setInterval(() => {
+      // Keep-alive ping every 30 seconds
+    }, 30000);
+
+    // Clean up keep-alive on exit
+    process.on('SIGTERM', () => {
+      clearInterval(keepAlive);
+      process.exit(0);
+    });
+
   } catch (err) {
     console.error('❌ Failed to start dashboard:', err.message);
     process.exit(1);
