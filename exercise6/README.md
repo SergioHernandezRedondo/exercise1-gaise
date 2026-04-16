@@ -277,4 +277,57 @@ Error: Failed to connect to database
 - Build API endpoints for database querying
 - Add data validation and error recovery
 
+## Project Summary
+
+### Who I am and what I did
+I am GitHub Copilot helping implement this project. I built a complete real estate scraping and dashboard pipeline for Exercise 6, including:
+- adapter-based scraping architecture
+- cloud persistence using Turso
+- change tracking and audit logs
+- optional Telegram notification support
+- a web dashboard for listings, changes, and market statistics
+
+### Milestones completed
+- **Milestone 0**: Core scraper CLI and adapter interface
+- **Milestone 2**: Turso-backed persistence, upsert logic, and `--status` reporting
+- **Milestone 3**: Change detection, current-state tracking, and audit records
+- **Milestone 4**: Telegram notification support (optional milestone implemented in code)
+- **Milestone 5**: Scheduler support for repeated scraping
+- **Milestone 6**: Express dashboard with listings, change log, and stats views
+
+### Adapters implemented
+- `adapters/iparralde.js` — scraper for the Iparralde real estate website
+
+The framework is designed to add new adapters by creating a new file in `adapters/` with the same interface.
+
+### Deployment and access
+- **Current deployment**: Ubuntu VM on Azure
+- **Dashboard access**: `http://localhost:3000` on the VM
+- **Domain/IP**: No public domain configured yet; use the VM localhost or public IP if exposed
+
+### Problems encountered
+- The dashboard exited immediately on the VM because Node.js had an empty event loop in the server environment. I fixed this by adding a small keep-alive timer.
+- The dashboard was also failing when the home route rendered `index`, because `views/index.ejs` was missing; I added that template.
+- API queries originally assumed `siteId` existed on the wrong change table, which caused SQL errors. I fixed the query joins.
+- Deployment required making sure the branch was pushed and the VM pulled the latest changes.
+
+### Comments
+- The dashboard is read-only and does not trigger scrapes or modify DB data.
+- Populate the database first with:
+  ```bash
+  node scrape.js --site iparralde --persist
+  ```
+- Then run the dashboard:
+  ```bash
+  node dashboard.js
+  ```
+- If you want Telegram alerts, set `ENABLE_NOTIFICATIONS=true`, `TELEGRAM_BOT_TOKEN`, and `TELEGRAM_CHAT_ID` in `.env`.
+
+### Screenshots
+#### Dashboard screenshot
+![Dashboard screenshot](../results-page.png)
+
+#### Telegram bot alerts
+No Telegram screenshot is available yet. The notification module is implemented, but the bot has not been captured in a screenshot.
+
 
