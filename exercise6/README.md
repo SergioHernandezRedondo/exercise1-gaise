@@ -1,7 +1,7 @@
 ## Project Summary
 
 ### Who I am and what I did
-I am Sergio Hernández. I built a complete real estate scraping and dashboard pipeline for Exercise 6, including:
+I am Sergio Hernández. I built a complete real estate scraping and dashboard:
 - adapter-based scraping architecture
 - cloud persistence using Turso
 - change tracking and audit logs
@@ -37,7 +37,7 @@ The framework is designed to add new adapters by creating a new file in `adapter
 - **Milestone 10**: Full production deployment complete:
   - Nginx reverse proxy running and forwarding traffic from ports 80/443 to dashboard on port 3000
   - systemd service active and auto-restarting on failure
-  - Let's Encrypt HTTPS certificate installed with automatic renewal
+  - Encrypted HTTPS certificate installed with automatic renewal
   - Crontab scheduler configured for periodic scrapes every 30 minutes
   - Dashboard live at **https://sergiohernandez.eus**
 
