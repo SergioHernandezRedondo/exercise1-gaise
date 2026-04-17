@@ -55,6 +55,8 @@ The framework is designed to add new adapters by creating a new file in `adapter
 - The dashboard was also failing when the home route rendered `index`, because `views/index.ejs` was missing;
 - API queries originally assumed `siteId` existed on the wrong change table, which caused SQL errors. I fixed the query joins.
 - Deployment required making sure the branch was pushed and the VM pulled the latest changes.
+- We had to call Dinahost's customer service to get them to allow the domain, since many people tried to get a domain using their university email.
+- Although the statistics and change log work perfectly on localhost, they stop working when deployed to the website. See the screenshots in the results section for proof.
 
 ### Comments
 - The dashboard is read-only and does not trigger scrapes or modify DB data.
@@ -68,52 +70,3 @@ The framework is designed to add new adapters by creating a new file in `adapter
 #### Telegram bot alerts
 
 The Telegram video is in the root directory of the project, named "TelegramNotification.mp4"
-
-## Troubleshooting
-
-### Dashboard shows empty metrics (all dashes)
-This means the database is empty because no data has been scraped yet.
-
-**On your deployed server:**
-```bash
-# SSH into the Azure VM
-ssh -i your-key.pem azureuser@<vm-ip>
-sudo su - deploy
-
-# Run a manual scrape to populate the database
-cd ~/real-estate-monitor  # or your project directory
-node scrape.js --site iparralde --persist
-
-# Verify data was inserted
-node scrape.js --status
-
-# Then refresh the dashboard at https://sergiohernandez.eus
-```
-
-**Check if the cron job is running:**
-```bash
-# View the cron log
-tail -f ~/scrape.log
-
-# List active cron jobs
-crontab -l
-
-# If cron isn't set up, add it:
-crontab -e
-# Add: */30 * * * * cd /home/deploy/real-estate-monitor && /usr/bin/node scrape.js --once >> /home/deploy/scrape.log 2>&1
-```
-
-### Metrics appear but are incorrect
-Verify the Turso database has the correct credentials in `/home/deploy/real-estate-monitor/.env`:
-```bash
-cat ~/.env
-# Should show: TURSO_DB_URL=libsql://... and TURSO_DB_TOKEN=...
-```
-
-Check the database connection:
-```bash
-node scrape.js --status
-```
-
-### Security Note
-⚠️ **Never commit `.env` or real credentials to Git.** The `.env.example` file should only contain placeholder values. Update your `.env` on the deployed server with actual credentials from Turso and Telegram.
